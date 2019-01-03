@@ -1,0 +1,195 @@
+*{
+  padding: 0px; 
+  margin: 0px;
+  color: rgba(0,0,0,0.65);
+  outline: none;
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+html, body {
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+.container-bg {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background-color: #fff;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.container-main {
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#liveBox .container-main {
+  background-image: url(../img/bg.png);
+}
+.container-handle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.container-dialogue {
+  font-size: 0.28rem;
+  color: #fff;
+}
+.container-toolbar {
+  /*height: 1rem;*/
+  background-color: rgba(0,0,0,0.25);
+  font-size: 0;
+}
+.container-toolbar-input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  color: #fff;
+}
+#input_content {
+  display: inline-block;
+  line-height: 2rem;
+  background-color: rgba(0,0,0,0.5);
+  border: 0;
+  width: 15rem;
+  padding: 0 8px;
+  margin: 4px;
+  font-size: 0.28rem;
+  color: #fff;
+}
+#say {
+  display: inline-block;
+  line-height: 2rem;
+  padding: 0 0.4rem;
+  font-size: 0.28rem;
+  color: #fff;
+}
+#contents {
+  max-height: 10rem;
+  overflow: auto;
+  padding: 4px;
+}
+.contents_item {
+  padding: 4px 8px;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  text-shadow: 0 0 1px #333;
+  color: #fff;
+}
+.audio {
+  display: none;
+}
+/*.container-toolbar-quick {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  height: 100%;
+  font-size: 0.28rem;
+  color: #fff;
+}*/
+.blur {   
+  -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+      -ms-filter: blur(10px);   
+        filter: blur(10px);   
+}
+
+#liveBox {
+  display: none;
+}
+#loginBox {
+  display: block;
+}
+.form_login {
+  width: 280px;
+  height: 90px;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 4px;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -71px;
+  margin-left: -151px;
+  left: 50%;
+}
+#userName {
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  padding: 6px 11px;
+  height: 40px;
+  font-size: 16px;
+  font-family: "Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-variant: tabular-nums;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 1.5;
+  color: rgba(0,0,0,.65);
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all .3s;
+}
+#userName:focus, #userName:hover {
+  border-color: #40a9ff;
+}
+#subUser {
+  background-color: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+  outline: 0;
+  line-height: 1.5;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  position: relative;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  margin-top: 10px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>酷鱼网｜测试</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/js/chat.js"></script>
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div id="contain">
+            <div id="content">
+                <div id="content_show">
+                    <div id="contents"></div>
+                </div>
+                <div id="content_saying">
+                    <div id="toolbar"></div>
+                    <div id="input_content" contenteditable="true"></div>
+                    <div id="sayingto">你好 [<span id="from"></span>] ，你正在对 [<span id="to"></span>] 说</div>
+                    <div id="say">发送</div>
+                </div>
+            </div>
+            <div id="users_online">
+                <div id="usersbar">
+                    <div id="user_label">在线用户</div>
+                    <div id="users_list">
+                        <ul id="list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="loginBox">
+            <div id="loginPanel">
+                <div class="form_line">
+                    <div class="form_label">昵称：</div>
+                    <input type="text" name="name" id="userName"/>
+                </div>
+                <div class="form_line">
+                    <div class="form_label"></div>
+                    <button class="button" id="subUser">登录</button>
+                    <button class="button" id="reUser">取消</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
